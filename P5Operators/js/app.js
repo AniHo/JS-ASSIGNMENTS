@@ -17,4 +17,11 @@ let remainderOutput = 0;
 remainderOutput = firstNumber % secondNumber ;
 console.log(remainderOutput);
 
+let areaInput = 2 * 2;
+let areaInput2 = 3.14;
+outputArea = areaInput2 * areaInput;
+console.log(outputArea);
+
+
+
 
