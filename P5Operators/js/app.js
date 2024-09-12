@@ -42,3 +42,5 @@ gold %=2;
 console.log(gold);
 
 
+
+
