@@ -1,60 +1,20 @@
-let firstNumber = 7;
-let secondNumber = 2;
-let answer = 0;
+let speedInput = 72;
+let speedOutput = 0;
+speedOutput = speedInput / 3.6;
+console.log(speedOutput);
 
-// 1+2 = 3
+let minutesInput = 3;
+let secondsOutput = 0;
+secondsOutput = minutesInput * 60;
+console.log(secondsOutput);
 
-answer = firstNumber + secondNumber ;
-console.log(answer);
+let firstNumber = 11 ;
+let secondNumber = 4 ;
+numberOutput = firstNumber / secondNumber ;
+console.log(numberOutput);
 
-answer = firstNumber - secondNumber ;
-console.log(answer);
-
-answer = firstNumber * secondNumber ;
-console.log(answer);
-
-answer = firstNumber % secondNumber ;
-console.log(answer);
-
-let gold = 50;
-gold+10;
-console.log(gold);
-
-gold = gold + 10;
-console.log(gold);
-
-gold +=10;
-console.log(gold);
-
-gold *=10;
-console.log(gold);
-
-gold /=10;
-console.log(gold);
-
-gold -=10;
-console.log(gold);
-
-gold /=10;
-console.log(gold);
-
-gold %=2;
-console.log(gold);
-
-let numberOfStudents = 0;
-
-// numberOfStudents += 1;
-numberOfStudents += 1;
-console.log(numberOfStudents);
-
-numberOfStudents++;
-console.log(numberOfStudents);
-
-++numberOfStudents;
-console.log(numberOfStudents);
-
-numberOfStudents -= 1;
-console.log(numberOfStudents);
-
+let remainderOutput = 0;
+remainderOutput = firstNumber % secondNumber ;
+console.log(remainderOutput);
 
 
