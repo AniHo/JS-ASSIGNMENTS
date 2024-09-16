@@ -45,8 +45,13 @@ let hypotenuse = Math.sqrt(c);
 console.log(hypotenuse);
 
 let seconds = 111;
-let minutes = Math.floor(seconds / 60) ;
-let console.log(;
+let outputInMin = Math.floor(seconds / 60) ;
+console.log(outputInMin);
+let OutputInMinAndSeconds = outputInMin + "min" + seconds % 60 + "sec";
+console.log(OutputInMinAndSeconds);
+
+
+
 
 
 
