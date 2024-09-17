@@ -58,5 +58,5 @@ else if (firstNumber < secondNumber) {
   return "Second Number Is Greater!";
   }
 }
-console.log(evaluateResult(10,24));
+console.log(evaluateResult(28,14));
 console.log(score);
