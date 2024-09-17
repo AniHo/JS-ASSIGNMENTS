@@ -44,16 +44,19 @@ console.log(convertNumbersToLetters (1));
 console.log(convertNumbersToLetters (2));
 console.log(convertNumbersToLetters(3));
 
-
+let score = 0;
 function evaluateResult(firstNumber, secondNumber ) {
   if (firstNumber === secondNumber) {
     return "Both Numbers Are Equal!";
   }
 else if (firstNumber > secondNumber) {
+  score++;
   return "First Number Is Greater!";
 }
 else if (firstNumber < secondNumber) {
+  score--;
   return "Second Number Is Greater!";
   }
 }
 console.log(evaluateResult(10,24));
+console.log(score);
