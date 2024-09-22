@@ -1,37 +1,22 @@
-//Document Elements
-//Looks for "text0"
+// Player names
+var player1 = "Player 1";
+var player2 = "Player 2";
 
-const textField0 = document.getElementById("text0");
-const textField1 = document.getElementById("text1");
+// Function to roll the dice
+function rollTheDice() {
+  setTimeout(function () {
+    var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+    var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
-const increaseScoreButton  = document.getElementById("button0");
-//Internal Variables
-let score =0;
-let win = false;
+    document.querySelector(".img1").setAttribute("src", "dice" + randomNumber1 + ".png");
+    document.querySelector(".img2").setAttribute("src", "dice" + randomNumber2 + ".png");
 
-increaseScoreButton.addEventListener("click", () => {
-  increaseScoreByOne();
-  updateScoreText();
-  checkScoreForSeven();
-});
-
-increaseScoreByOne();
-
-//Controllers
-function increaseScoreByOne() {
-  score++
+    if (randomNumber1 === randomNumber2) {
+      document.querySelector("h1").innerHTML = "Draw!";
+    } else if (randomNumber1 < randomNumber2) {
+      document.querySelector("h1").innerHTML = (player2 + " WINS!");
+    } else {
+      document.querySelector("h1").innerHTML = (player1 + " WINS!");
+    }
+  }, 2500);
 }
-function checkScoreForSeven() {
-  if (score >=7) {
-    changeScoreTextColor();
-  }
-}
-
-//View
-function updateScoreText() {
-  textField0.innerHTML = "Your score is :" + score;
-}
-function changeScoreTextColor() {
-  textField0.style.color ="green";
-}
-
